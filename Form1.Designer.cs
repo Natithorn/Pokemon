@@ -59,6 +59,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -121,6 +122,7 @@
             this.EvoButton3.TabIndex = 5;
             this.EvoButton3.Text = "Evo";
             this.EvoButton3.UseVisualStyleBackColor = true;
+            this.EvoButton3.Click += new System.EventHandler(this.EvoButton3_Click);
             // 
             // EvoButton4
             // 
@@ -130,6 +132,7 @@
             this.EvoButton4.TabIndex = 6;
             this.EvoButton4.Text = "Evo";
             this.EvoButton4.UseVisualStyleBackColor = true;
+            this.EvoButton4.Click += new System.EventHandler(this.EvoButton4_Click);
             // 
             // imageList1
             // 
@@ -313,6 +316,7 @@
             this.button3.TabIndex = 27;
             this.button3.Text = "Evo2";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -322,12 +326,24 @@
             this.button4.TabIndex = 28;
             this.button4.Text = "Evo2";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(694, 390);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(94, 34);
+            this.button5.TabIndex = 29;
+            this.button5.Text = "Evo3";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -400,5 +416,6 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button5;
     }
 }
