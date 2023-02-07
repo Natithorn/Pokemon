@@ -19,6 +19,10 @@ namespace Pokemon
         public string getName() { return this.name; }
         public int getHP() { return this.HP;}
         public int getAt() { return this.Atk; }
+        public void setHP(int hp)
+        {
+            HP = hp;
+        }
 
 
     }

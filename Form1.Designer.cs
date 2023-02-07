@@ -52,7 +52,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Atbutton1 = new System.Windows.Forms.Button();
-            this.Atbutton2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -246,7 +245,7 @@
             // 
             // Atbutton1
             // 
-            this.Atbutton1.Location = new System.Drawing.Point(258, 191);
+            this.Atbutton1.Location = new System.Drawing.Point(353, 220);
             this.Atbutton1.Name = "Atbutton1";
             this.Atbutton1.Size = new System.Drawing.Size(112, 34);
             this.Atbutton1.TabIndex = 33;
@@ -254,18 +253,9 @@
             this.Atbutton1.UseVisualStyleBackColor = true;
             this.Atbutton1.Click += new System.EventHandler(this.Atbutton1_Click);
             // 
-            // Atbutton2
-            // 
-            this.Atbutton2.Location = new System.Drawing.Point(648, 186);
-            this.Atbutton2.Name = "Atbutton2";
-            this.Atbutton2.Size = new System.Drawing.Size(112, 34);
-            this.Atbutton2.TabIndex = 34;
-            this.Atbutton2.Text = "Attack";
-            this.Atbutton2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(421, 191);
+            this.button1.Location = new System.Drawing.Point(589, 191);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 34);
             this.button1.TabIndex = 35;
@@ -279,7 +269,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.Atbutton2);
             this.Controls.Add(this.Atbutton1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -336,7 +325,6 @@
         private Label label7;
         private Label label9;
         private Button Atbutton1;
-        private Button Atbutton2;
         private Button button1;
     }
 }
