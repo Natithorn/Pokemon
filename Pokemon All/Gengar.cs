@@ -12,6 +12,7 @@ namespace Pokemon.Pokemon_All
         {
             this.name = "Gengar";
             this.HP = 60;
+            this.Atk = 65;
             this._image = Properties.Resources.Gastly3;
         }
     }

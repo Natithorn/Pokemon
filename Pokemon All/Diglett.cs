@@ -11,6 +11,7 @@ namespace Pokemon.Pokemon_All
         public Diglett() {
             this.name = "Diglett";
             this.HP = 10;
+            this.Atk = 55;
             this._image = Properties.Resources.Diglett1;
         }
     }

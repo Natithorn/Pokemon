@@ -4,7 +4,7 @@
     <Position X="8.5" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Stufful.cs</FileName>
+      <FileName>Pokemon All\Stufful.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Pokemon.Pokemon2" Collapsed="true">
@@ -12,20 +12,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAABAAAAAAQAAEQAAAAAAEAEAAAAA=</HashCode>
       <FileName>Pokemon2.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Pokemon.Bewear" Collapsed="true">
-    <Position X="7" Y="1.25" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Bewear.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Pokemon.Pokemon_All.Dugtrio" Collapsed="true">
-    <Position X="0.5" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Pokemon All\Dugtrio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Pokemon.Pokemon_All.Diglett" Collapsed="true">

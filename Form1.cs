@@ -12,85 +12,96 @@ namespace Pokemon
             InitializeComponent();
             Pokemane = new List<Pokemon2>();
             Pokemane.Add(new Stufful());
-            Pokemane.Add(new Bewear());
             Pokemane.Add(new Diglett());
-            Pokemane.Add(new Dugtrio());
-            Pokemane.Add(new Ekans());
             Pokemane.Add(new Arbok());
-            Pokemane.Add(new Gastly());
-            Pokemane.Add(new Haunter());
             Pokemane.Add(new Gengar());
+            Pokemane.Add(new Monster());
 
         }
         private void EvoButton1_Click(object sender, EventArgs e)
         {
-            SelPokemon = Pokemane[0];
-            this.pictureBox1.Image = SelPokemon.getImage();
-            this.textBoxName1.Text = SelPokemon.getName();
-            this.textBoxHP1.Text = SelPokemon.getHP().ToString();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SelPokemon = Pokemane[1];
-            this.pictureBox1.Image = SelPokemon.getImage();
-            this.textBoxName1.Text = SelPokemon.getName();
-            this.textBoxHP1.Text = SelPokemon.getHP().ToString();
 
+            if (Pokemane[0].getHP() <= 0)
+            {
+                MessageBox.Show("He is Dead !!");
+            }
+            else
+                SelPokemon = Pokemane[0];
+                this.pictureBox1.Image = SelPokemon.getImage();
+                this.textBoxName1.Text = SelPokemon.getName();
+                this.textBoxHP1.Text = SelPokemon.getHP().ToString();
+                this.textBoxAt1.Text = SelPokemon.getAt().ToString();
         }
         private void EvoButton2_Click(object sender, EventArgs e)
         {
-            SelPokemon = Pokemane[2];
-            this.pictureBox2.Image = SelPokemon.getImage();
-            this.textBoxName2.Text = SelPokemon.getName();
-            this.textBoxHP2.Text = SelPokemon.getHP().ToString();
+            if (Pokemane[1].getHP() <= 0)
+            {
+                MessageBox.Show("He is Dead !!");
+            }
+            else
+                SelPokemon = Pokemane[1];
+                this.pictureBox1.Image = SelPokemon.getImage();
+                this.textBoxName1.Text = SelPokemon.getName();
+                this.textBoxHP1.Text = SelPokemon.getHP().ToString();
+                this.textBoxAt1.Text = SelPokemon.getAt().ToString();
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void SelPokemon3_Click(object sender, EventArgs e)
         {
-            SelPokemon = Pokemane[3];
-            this.pictureBox2.Image = SelPokemon.getImage();
-            this.textBoxName2.Text = SelPokemon.getName();
-            this.textBoxHP2.Text = SelPokemon.getHP().ToString();
-        }
 
-        private void EvoButton3_Click(object sender, EventArgs e)
-        {
-            SelPokemon = Pokemane[4];
-            this.pictureBox3.Image = SelPokemon.getImage();
-            this.textBoxName3.Text = SelPokemon.getName();
-            this.textBoxHP3.Text = SelPokemon.getHP().ToString();
-        }
+            if (Pokemane[2].getHP() <= 0)
+            {
+                MessageBox.Show("He is Dead !!");
+            }
+            else
+                SelPokemon = Pokemane[2];
+                this.pictureBox1.Image = SelPokemon.getImage();
+                this.textBoxName1.Text = SelPokemon.getName();
+                this.textBoxHP1.Text = SelPokemon.getHP().ToString();
+                this.textBoxAt1.Text = SelPokemon.getAt().ToString();
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            SelPokemon = Pokemane[5];
-            this.pictureBox3.Image = SelPokemon.getImage();
-            this.textBoxName3.Text = SelPokemon.getName();
-            this.textBoxHP3.Text = SelPokemon.getHP().ToString();
-        }
-
-        private void EvoButton4_Click(object sender, EventArgs e)
-        {
-            SelPokemon = Pokemane[6];
-            this.pictureBox4.Image = SelPokemon.getImage();
-            this.textBoxName4.Text = SelPokemon.getName();
-            this.textBoxHP4.Text = SelPokemon.getHP().ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            SelPokemon = Pokemane[7];
-            this.pictureBox4.Image = SelPokemon.getImage();
-            this.textBoxName4.Text = SelPokemon.getName();
-            this.textBoxHP4.Text = SelPokemon.getHP().ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SelPokemon = Pokemane[8];
-            this.pictureBox4.Image = SelPokemon.getImage();
-            this.textBoxName4.Text = SelPokemon.getName();
-            this.textBoxHP4.Text = SelPokemon.getHP().ToString();
+            if (Pokemane[3].getHP() <= 0)
+            {
+                MessageBox.Show("He is Dead !!");
+            }
+            else
+                SelPokemon = Pokemane[3];
+                this.pictureBox1.Image = SelPokemon.getImage();
+                this.textBoxName1.Text = SelPokemon.getName();
+                this.textBoxHP1.Text = SelPokemon.getHP().ToString();
+                this.textBoxAt1.Text = SelPokemon.getAt().ToString();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+            ///Monster///
+        { 
+                SelPokemon = Pokemane[4];
+                this.pictureBox2.Image = SelPokemon.getImage();
+                this.textBoxName4.Text = SelPokemon.getName();
+                this.textBoxHP2.Text = SelPokemon.getHP().ToString();
+                this.textBoxAt2.Text = SelPokemon.getAt().ToString();
+        }
+
+        private void Atbutton1_Click(object sender, EventArgs e)
+        {
+            if (SelPokemon.getHP() > 0)
+            {
+                int Damage = (SelPokemon.getAt() - SelPokemon.getHP());
+                textBoxHP2.Text = Damage.ToString();   
+            }
+            else
+            {
+                textBoxHP2.Text = "0";
+                MessageBox.Show("Enemy Defect");
+            }
+
+           
         }
     }
 }

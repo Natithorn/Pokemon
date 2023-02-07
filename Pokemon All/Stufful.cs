@@ -12,6 +12,7 @@ namespace Pokemon
         public Stufful() {
             this.name = "Stufful";
             this.HP = 70;
+            this.Atk = 75;
             this._image = Properties.Resources._759;
         }
     }

@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Pokemon.Pokemon_All
 {
-    internal class Haunter : Pokemon2
+    internal class Monster : Pokemon2
     {
-        public Haunter()
+        public Monster()
         {
-            this.name = "Haunter";
-            this.HP =  45;
+            this.name = "Inwza";
+            this.HP = 120;
+            this.Atk = 35;
             this._image = Properties.Resources.Gastly2;
         }
     }

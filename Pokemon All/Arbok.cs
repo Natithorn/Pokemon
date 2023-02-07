@@ -12,6 +12,7 @@ namespace Pokemon.Pokemon_All
         {
             this.name = "Arbok";
             this.HP = 60;
+            this.Atk= 95;
             this._image = Properties.Resources.Ekans2;
         }
     }

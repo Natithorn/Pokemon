@@ -10,6 +10,7 @@ namespace Pokemon
     {
         protected  string  name;
         protected  int HP;
+        protected int Atk;
         protected Bitmap _image;
         public Bitmap getImage()
         {
@@ -17,5 +18,8 @@ namespace Pokemon
         }
         public string getName() { return this.name; }
         public int getHP() { return this.HP;}
+        public int getAt() { return this.Atk; }
+
+
     }
 }
